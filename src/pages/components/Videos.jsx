@@ -9,20 +9,24 @@ import user3 from '../../assets/img/user3.jpg'
 function Videos(){
     return(
         <section className="videos">
-            <span className="name1">
-                Tranding
-            </span>
-            <h1 className="name2">Veja O Melhor Aqui !</h1>
-            <div className="escolha">
-                <input type="button" value="Tops Views" />
-                <input type="button" value="Verificados" />
-                <input type="button" value="Explorar" />
-            </div>
-            <div className="videosSection">
-                <div className="boxs">
-                    <Vids img1={capa1} img2={user1} nome='Elon Musk' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
-                    <Vids img1={capa2} img2={user2} nome='Alanzoka' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
-                    <Vids img1={capa3} img2={user3} nome='Bill Gates' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
+            <div className="contentMax">
+                <div className="corrigir">
+                    <span className="name1">
+                        Tranding
+                    </span>
+                    <h1 className="name2">Veja O Melhor Aqui !</h1>
+                    <div className="escolha">
+                        <input type="button" value="Tops Views" />
+                        <input type="button" value="Verificados" />
+                        <input type="button" value="Explorar" />
+                    </div>
+                    <div className="videosSection">
+                        <div className="boxs">
+                            <Vids img1={capa1} img2={user1} nome='Elon Musk' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
+                            <Vids img1={capa2} img2={user2} nome='Alanzoka' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
+                            <Vids img1={capa3} img2={user3} nome='Bill Gates' desc='lorem ipus ewwhqeuwqa  hsaashua'/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

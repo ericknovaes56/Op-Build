@@ -8,7 +8,7 @@
 }
 :root{
   --width-padding: 50px;
-  --max-screen:100%;
+  --max-screen:1347px;
 }
 body{
   background-color: #1E2021;
@@ -23,6 +23,7 @@ body{
 }
 .menu{
   margin-top: 10px;
+  width: 100%;
   box-sizing: border-box;
   border-radius: 20px;
   display: flex;
@@ -43,7 +44,6 @@ body{
 }
 .menu .fistShow .navigator ul{
   display: flex;
-  gap: 10px;
 }
 .menu .fistShow .navigator ul li{
   list-style-type: none;
@@ -54,6 +54,13 @@ body{
   text-transform: capitalize;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-right: 1px solid #461222;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.menu .fistShow .navigator ul li .dise{
+  border-right: 0px solid grey;
 }
 .menu .areaLogin input{
   background-color: transparent;
@@ -69,9 +76,15 @@ header{
   display: flex;
   justify-content: center;
   padding: 30px var(--width-padding);
-  flex-direction: column;
-  background-size: cover;
+}
+.contentMax{
+  width: 100%;
   max-width: var(--max-screen);
+}
+.corrigir{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 header .grid{
   display: grid;
@@ -147,6 +160,7 @@ header .grup{
 }
 header .intro{
   margin-top: 60px;
+  width: 100%;
   color: white;
   display: flex;
   align-items: center;
@@ -272,9 +286,10 @@ header .grid .box:hover span{
   opacity: 1;
 }
 .videos{
-  padding: 0 var(--width-padding);
+  display: flex;
+  justify-content: center;
   color: white;
-  max-width: var(--max-screen);
+  padding: 30px var(--width-padding);
 }
 .videos .name1{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -347,23 +362,21 @@ header .grid .box:hover span{
   color: #C1475D;
   border-bottom: 1px solid #C1475D;
 }
-.foot{
-  padding: 30px var(--width-padding);
-}
 footer{
   margin-top: 40px;
-  min-height: 
-  430px;
-  background-color: #a70035ee;
+  min-height: 430px;
   border-radius: 30px;
   display: flex;
-  justify-content: start;
-  align-items:center;
-  flex-direction: column;
-  padding:  0 50px;
-  box-sizing: border-box;
+  justify-content: center;
 }
-
+.color{
+  background-color: #a70035ee;
+  padding:  0 50px;
+  min-height: 430px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 100%;
+}
 .init_footer{
   width: 100%;
   height: 100px;
@@ -415,10 +428,57 @@ footer{
   gap: 5px;
   align-items: center;
 }
-.dontshow{
-  color: white;
-  font-size: 45px;
-  line-height: 0%;
-  cursor: pointer;
+.dontshowbottom{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  z-index: 22;
+  left: 0;
+  margin-bottom: 20px;
+}
+.dontshowbottom .content{
+  display: flex;
+}
+.dontshowbottom .content .box{
+  width: 400px;
+  background-color: white;
+  height: 100%;
+  border-radius: 20px;
+}
+.lists{
   display: none;
+}
+.lists .navigator{
+  padding: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.lists .navigator ul{
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  overflow-x: auto;
+}
+.lists .navigator ul::-webkit-scrollbar{
+  display: none;
+}
+.lists .navigator ul li{
+  list-style-type: none;
+}
+.lists .navigator ul li a{
+  color: white;
+  text-decoration: none;
+  background-color: #1A1C1E;
+  padding: 0 40px;
+  white-space: nowrap;
+
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

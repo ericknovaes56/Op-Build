@@ -13,10 +13,10 @@
 body{
   background-color: #1E2021;
 }
-*::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
   background-color: #a70035;
 }
-*::-webkit-scrollbar{
+body::-webkit-scrollbar{
   background-color: #300614;
   width: 3px;
   height: 5px;
@@ -110,6 +110,9 @@ header .grid .box{
   line-height: 0;
   background-position: center center;
   background-size: cover;
+}
+header .grid .box::-webkit-scrollbar{
+  display: none;
 }
 header .grid .box:nth-child(1){
   background-image: url('../img/fifa.jpg');

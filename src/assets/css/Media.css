@@ -14,7 +14,7 @@
     header .grid{
         overflow-x: auto;
         display: flex;
-        padding: 20px 0;
+        padding: 20px 10px;
         width: 100%;
         justify-content: start;
         box-sizing: border-box;
@@ -119,6 +119,8 @@
     .videosSection .boxs .box{
         flex-direction: column;
         height: auto;
+        background-color: transparent;
+        padding: 0;
     }
     .videosSection .boxs .box .top img{
         width: 100%;
@@ -137,13 +139,40 @@
         height: 200px;
     }
 }
+@media (max-width:500px){
+    header .grid .box{
+        width: 180px;
+        height: 250px;
+    }
+    .header .grup{
+        gap: 15px;
+    }
+    header .grup{
+        margin-top: 10px;
+    }
+    header .grid .box span{
+        font-size: 15px;
+    }
+    .lists .navigator ul li a{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    .lists .navigator{
+        padding: 10px 0;
+    }
+    .color{
+        padding: 20px 30px;
+    }
+    .text_footer p{
+        font-size: 12px;
+    }
+}
 @media (max-width:422px){
     header .intro .text img{
         position: absolute;
         left: 20px;
     }
     header .grid .box{
-        height: 180px;
         max-width: 250px;
     }
 }
